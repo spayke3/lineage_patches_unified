@@ -1,25 +1,25 @@
-From bef8e8758e98ae5be896cc90a4f6906f62320431 Mon Sep 17 00:00:00 2001
+From fd2d0773eb8fd3cbb4cce5bd4108a49e05bdc0d0 Mon Sep 17 00:00:00 2001
 From: spayke3 <spaykedotimas892@gmail.com>
-Date: Mon, 26 Aug 2024 18:43:00 +0800
+Date: Mon, 26 Aug 2024 22:25:49 +0800
 Subject: [PATCH] test
 
 ---
- Android.bp                             | 36 --------------------------
+ Android.bp                             | 37 --------------------------
  vndk/v29/arm/libprotobuf-cpp-full.so   |  1 -
  vndk/v29/arm/libprotobuf-cpp-lite.so   |  1 -
  vndk/v29/arm64/libprotobuf-cpp-full.so |  1 -
  vndk/v29/arm64/libprotobuf-cpp-lite.so |  1 -
- 5 files changed, 40 deletions(-)
+ 5 files changed, 41 deletions(-)
  delete mode 120000 vndk/v29/arm/libprotobuf-cpp-full.so
  delete mode 120000 vndk/v29/arm/libprotobuf-cpp-lite.so
  delete mode 120000 vndk/v29/arm64/libprotobuf-cpp-full.so
  delete mode 120000 vndk/v29/arm64/libprotobuf-cpp-lite.so
 
 diff --git a/Android.bp b/Android.bp
-index 564f0be..37c28ea 100644
+index 564f0be..48949fa 100644
 --- a/Android.bp
 +++ b/Android.bp
-@@ -471,43 +471,7 @@ cc_library_shared {
+@@ -471,43 +471,6 @@ cc_library_shared {
      vendor: true,
  }
  
@@ -41,7 +41,7 @@ index 564f0be..37c28ea 100644
 -    compile_multilib: "both",
 -    check_elf_files: false,
 -}
- 
+-
 -cc_prebuilt_library_shared {
 -    name: "libprotobuf-cpp-lite-vendorcompat",
 -    stem: "libprotobuf-cpp-lite",
